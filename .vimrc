@@ -14,8 +14,8 @@ highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
 match ZenkakuSpace /　/
 
 " タブ幅
-set ts=4 sw=4
-set softtabstop=4
+set ts=2 sw=2
+set softtabstop=2
 set expandtab
 
 "常にステータス行を表示
@@ -59,9 +59,9 @@ set title
 "#編集中のファイル名を表示
 set ruler
 "#ルーラーの表示
-set tabstop=4
+set tabstop=2
 "#タブ文字数を4に
-set shiftwidth=4
+set shiftwidth=2
 "#シフト移動幅
 set expandtab
 "#タブの代わりに空白文字挿入
@@ -132,3 +132,11 @@ set fileformats=unix,dos,mac
 if exists('&ambiwidth')
   set ambiwidth=double
 endif
+
+"------------------------------------
+" NERD Tree
+"------------------------------------
+" 表示
+nmap <silent> <F1> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+let g:NERDTreeWinSize = 40
