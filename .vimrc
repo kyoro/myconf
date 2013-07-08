@@ -69,8 +69,8 @@ set expandtab
 "#前回終了したカーソル行に移動幅 
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 
-
 setlocal omnifunc=syntaxcomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
 
 """""
 " Japanese Settins by ずんWiki
@@ -140,3 +140,6 @@ endif
 nmap <silent> <F1> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
 let g:NERDTreeWinSize = 40
+
+
+let g:neocomplcache_enable_at_startup = 1
