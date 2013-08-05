@@ -9,6 +9,10 @@ highlight Folded ctermfg=blue
 highlight SpecialKey cterm=underline ctermfg=darkgrey
 "highlight SpecialKey ctermfg=grey " 特殊記号
 
+highlight Pmenu ctermfg=darkyellow
+highlight PmenuSel ctermfg=blue
+
+
 " 全角スペースを視覚化
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
 match ZenkakuSpace /　/
